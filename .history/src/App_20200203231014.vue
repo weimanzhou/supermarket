@@ -1,0 +1,22 @@
+<template>
+  <div id="app">
+    <router-view/>
+    <main-tab-bar/>
+  </div>
+</template>
+
+<script>
+import MainTabBar from 'src\components\content\maintabbar\MainTabBar.vuecomponents/content/maintabbar/MainTabBar.vue'
+
+export default {
+  name: 'App',
+  components: {
+    MainTabBar
+  }
+}
+</script>>
+
+<style>
+@import "./assets/css/base.css"
+
+</style>

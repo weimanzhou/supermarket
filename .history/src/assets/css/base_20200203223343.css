@@ -1,0 +1,11 @@
+@import "./reset.css"
+
+/* 定义一些变量 */
+:root {
+  --color-text: #666;
+  --color-high-text: #ff5777;
+  --color-tint: #ff8198;
+  --color-background: #fff;
+  
+}
+
