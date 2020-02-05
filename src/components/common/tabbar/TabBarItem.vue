@@ -32,11 +32,11 @@ export default {
   computed: {
     isActive() {
       // console.log(this.$router)
-      return true;
-      // return this.$router.path.indexof(this.path) !== -1
+      // return true;
+      return this.$route.path.indexOf(this.ipath) !== -1
     },
     activeStyle() {
-      return this.$router.isActive ? { color: this.activeColor } : {};
+      return this.isActive ? { color: this.activeColor } : {};
     }
   },
   methods: {
@@ -54,6 +54,8 @@ export default {
   text-align: center;
   height: 49px;
   font-size: 16px;
+
+  cursor: pointer;
 }
 
 .tab-bar-item img {
